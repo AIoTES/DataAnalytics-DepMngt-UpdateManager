@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  maintenance-panel:
+    image: activage-update-manager:1.0
+    environment:
+      - DOCKER_REGISTRY_SERVER_URL=https://docker-activage.satrd.es
+      - DOCKER_REGISTRY_USER=activage
+      - DOCKER_REGISTRY_PASSWORD=docker.activage
+      - STORAGE=POSTGRES
+      - POSTGRES_HOST=database
+      - POSTGRES_PORT=5432
+      - POSTGRES_DATABASE=activage-update-manager
+      - POSTGRES_USER=activage
+      - POSTGRES_PASSWORD=activage
+    ports:
+      - 8004:8080
+
+  database:
+    image: postgres:10-alpine
+    environment:
+      - POSTGRES_USER=activage
+      - POSTGRES_PASSWORD=activage
+      - POSTGRES_DB=activage-update-manager
+    ports:
+      - 5432:5432
