@@ -13,7 +13,7 @@ public class RegistryUtils {
             "dl-metadata-storage-explorer", "dl-query-component", "feature-selection-filter-method", "feature-selection-wrapper-method",
             "hierarchical-clustering-method", "hypothesis-testing", "independentdatastorage",
             "influxdb", "intermw", "interoperability-demo-app", "ipsm-core", "json-server", "maintenance-panel", "metadata-storage-server",
-            "mongo", "myfirstimage", "ont-explorer_dev-semantic_serv-semantics", "siltool", "syntactic-translator");
+            "mongo", "myfirstimage", "ont-explorer_dev-semantic_serv-semantics", "siltool", "syntactic-translator", "update-manager");
     public static String registryUrl = "https://docker-activage.satrd.es";
     public static String user = "activage";
     public static String password = "docker.activage";

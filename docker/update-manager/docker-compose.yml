@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  maintenance-panel:
+  update-manager:
     image: activage-update-manager:1.0
     environment:
       - DOCKER_REGISTRY_SERVER_URL=https://docker-activage.satrd.es
